@@ -14,7 +14,7 @@ export default function ListItem ({index}) {
   
   return (
     <div className="listItem"
-     style={{left:isHovered && index * 225 -50}}
+    //  style={{left:isHovered && index * 225 -50}}
      onMouseEnter={() => setIsHovered(true)}
      onMouseLeave={() => setIsHovered(false)} >
       <img src="https://static1.elcorreo.com/www/multimedia/202209/01/media/cortadas/sandman-k4HI-U1701121447502Pa-624x385@RC.jpg" alt="" />
@@ -22,7 +22,7 @@ export default function ListItem ({index}) {
       <>
       <video
        src={trailer}
-       style={{left:isHovered && index * 225 +5}}
+      //  style={{left:isHovered && index * 225 +10}}
        autoPlay={true}
        type='video/mp4'
         />
@@ -30,10 +30,10 @@ export default function ListItem ({index}) {
 
       <div className="itemInfo">
         <div className="icons">
-          <PlayArrow />
-          <AddIcon />
-          <ThumbUpOffAltIcon />
-          <ThumbDownOffAltIcon />
+          <PlayArrow className="icon"/>
+          <AddIcon className="icon"/>
+          <ThumbUpOffAltIcon className="icon"/>
+          <ThumbDownOffAltIcon className="icon"/>
         </div>
         <div className="itemInfoTop">
           <span>1 hour 14 minutes</span>
