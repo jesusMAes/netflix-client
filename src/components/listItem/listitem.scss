@@ -1,0 +1,47 @@
+.listItem{
+  width: 225px;
+  height: 120px;
+  background-color: var(--main-color);
+  margin-right: 5px;
+  cursor: pointer;
+  color:white;
+  transition: all .5s ease;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .videoWrapper{
+    position:relative;
+    width:325px;
+
+  }
+
+  video{
+    width:315px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transition: all .5s ease;
+  }
+
+  &:hover{
+    width:325px;
+    height: 300px;
+     margin-top:-150px;
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(255,255,255,0.26); 
+     box-shadow: 0px 2px 15px 0px rgba(255,255,255,0.26);
+
+    img {
+      height:140px
+    }
+    video{
+      opacity: 1;
+      bottom:100%;
+    }
+  }
+}
